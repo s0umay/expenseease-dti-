@@ -4,14 +4,14 @@ import avatar from '../../img/avatar.png'
 import { signout } from '../../utils/Icons'
 import { menuItems } from '../../utils/menuItems'
 
-function Navigation({active, setActive}) {
+function Navigation({active, setActive,userName}) {
     
     return (
         <NavStyled>
             <div className="user-con">
                 <img src={avatar} alt="" />
                 <div className="text">
-                    <h2>Rajat</h2>
+                    <h2>{userName}</h2>
                     <p>Your Money</p>
                 </div>
             </div>

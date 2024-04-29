@@ -6,7 +6,7 @@ import { InnerLayout } from '../../styles/Layouts';
 import { dollar } from '../../utils/Icons';
 import Chart from '../Chart/Chart';
 
-function Dashboard() {
+function Dashboard({userName}) {
     const {totalExpenses,incomes, expenses, totalIncome, totalBalance, getIncomes, getExpenses } = useGlobalContext()
 
     useEffect(() => {
